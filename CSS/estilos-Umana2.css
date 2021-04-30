@@ -1,0 +1,730 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+h1 h2 h3 {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "headerI headerI" "fotoLogo fotoLogo" "quienesSomos quienesSomos" "photoLizLeft quoteLizRight" "footer footer";
+  height: 100vh;
+}
+
+.headerInde {
+  grid-area: headerI;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: #ee2537;
+}
+
+@keyframes logoAnimation {
+  /*
+	0%{ width: 400px;}
+	100% { width: 1300px;}
+	*/
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation-name: logoAnimation;
+  animation-duration: 2s;
+  padding-bottom: 10px;
+  padding-top: 3px;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+nav ul li {
+  display: block;
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: 0px;
+  line-height: 4.5px;
+  font-family: "Work Sans", sans-serif;
+}
+
+nav ul li ul a:hover {
+  color: #012b65;
+}
+
+.fotoLogo {
+  display: flex;
+  flex-direction: column;
+  grid-area: fotoLogo;
+}
+
+.quienesSomos {
+  grid-area: quienesSomos;
+  background-color: #a0dde7;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.quienesSomos h1 {
+  color: #ee2537;
+  font-size: 50px;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.quienesSomos p {
+  color: #012b65;
+  font-size: 25px;
+}
+
+.lizPhoto {
+  grid-area: photoLizLeft;
+  background-color: #ee2537;
+}
+
+.lizPhoto img {
+  padding-left: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.quoteLiz {
+  grid-area: quoteLizRight;
+  background-color: #f4b3c7;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  padding-right: 30px;
+  padding-left: 50px;
+}
+
+.quoteLiz h2 {
+  font-size: 35px;
+  font-family: "Rubik Mono One", sans-serif;
+  color: #fff;
+}
+
+.quoteLiz p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 25px;
+  color: #012b65;
+}
+
+.footerIn {
+  grid-area: footer;
+  background-color: #012b65;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footerIn h3 {
+  font-size: 20px;
+  font-family: "Rubik Mono One", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerIn section a img {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+.footerIn section a img:hover {
+  transform: scale(1.5);
+}
+
+.float1 {
+  float: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gridServicios {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "headerS headerS" "serviciosSe serviciosSe" "asesoríaS investigacionS" "brandingS disenoWebS" "contenidoRS contenidoRS" "footerS footerS";
+}
+
+.headerSer {
+  grid-area: headerS;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #a0dde7;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation-name: logoAnimation;
+  animation-duration: 2s;
+  padding-bottom: 10px;
+  padding-top: 3px;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+nav ul li {
+  display: block;
+  text-align: right;
+  color: #012b65;
+  font-size: 18px;
+  margin-right: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: 0px;
+  line-height: 4.5px;
+  font-family: "Work Sans", sans-serif;
+}
+
+nav ul li ul a:hover {
+  color: #012b65;
+}
+
+.conoceServicios {
+  grid-area: serviciosSe;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.conoceServicios__h1 {
+  color: #ee2537;
+  text-align: center;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contenedor {
+  grid-area: asesoríaS;
+  max-width: 870px;
+  width: 90%;
+  padding: 0px;
+  padding-left: 30px;
+}
+
+.box {
+  background-color: #f4b3c7;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.box__img {
+  width: 300px;
+  margin-right: 30px;
+  border-radius: 5%;
+}
+
+.box__titulo {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.box__titulo:hover {
+  transform: scale(1.05);
+}
+
+.box__parrafo {
+  line-height: 20px;
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  color: #012b65;
+  padding-bottom: 20px;
+}
+
+.boton {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton--derecha {
+  background-color: #ee2537;
+  color: #fff;
+  position: absolute;
+  border-radius: 10%;
+  height: 25px;
+  right: 20px;
+  bottom: 10px;
+}
+
+.contenedor2 {
+  grid-area: investigacionS;
+  max-width: 870px;
+  width: 90%;
+}
+
+.box2 {
+  background-color: #a0dde7;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.box2__img {
+  width: 300px;
+  margin-right: 30px;
+  border-radius: 5%;
+}
+
+.box2__titulo {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.box2__titulo:hover {
+  transform: scale(1.05);
+}
+
+.box2__parrafo {
+  line-height: 20px;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #012b65;
+  padding-bottom: 60px;
+}
+
+.boton2 {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton2--derecha {
+  color: #fff;
+  background-color: #ee2537;
+  position: absolute;
+  height: 20px;
+  right: 20px;
+  bottom: 10px;
+  border-radius: 10%;
+}
+
+.contenedor3 {
+  grid-area: brandingS;
+  max-width: 870px;
+  width: 90%;
+  padding-left: 30px;
+}
+
+.box3 {
+  background-color: #012b65;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.box3__img {
+  width: 300px;
+  margin-right: 30px;
+  border-radius: 5%;
+}
+
+.box3__titulo {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.box3__titulo:hover {
+  transform: scale(1.05);
+}
+
+.box3__parrafo {
+  line-height: 20px;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+.boton3 {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton3--derecha {
+  background-color: #ee2537;
+  color: #fff;
+  position: absolute;
+  border-radius: 10%;
+  height: 20px;
+  right: 20px;
+  bottom: 10px;
+}
+
+.contenedor4 {
+  grid-area: disenoWebS;
+  max-width: 870px;
+  width: 90%;
+}
+
+.box4 {
+  background-color: #ee2537;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.box4__img {
+  width: 300px;
+  margin-right: 30px;
+  border-radius: 5%;
+}
+
+.box4__titulo {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.box4__titulo:hover {
+  transform: scale(1.05);
+}
+
+.box4__parrafo {
+  line-height: 20px;
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  color: #012b65;
+  padding-bottom: 60px;
+}
+
+.boton4 {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton4--derecha {
+  background-color: #fff;
+  color: #ee2537;
+  position: absolute;
+  border-radius: 10%;
+  height: 20px;
+  right: 20px;
+  bottom: 10px;
+}
+
+.contenedor5 {
+  grid-area: contenidoRS;
+  max-width: 870px;
+  width: 45%;
+  margin-left: 380px;
+}
+
+.box5 {
+  background-color: #f4b3c7;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.box5__img {
+  width: 300px;
+  margin-right: 30px;
+  border-radius: 5%;
+}
+
+.box5__titulo {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.box5__titulo:hover {
+  transform: scale(1.05);
+}
+
+.box5__parrafo {
+  line-height: 20px;
+  font-size: 1rem;
+  font-family: "textos";
+  color: #012b65;
+  padding-bottom: 30px;
+}
+
+.boton5 {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton5--derecha {
+  background-color: #ee2537;
+  color: #fff;
+  position: absolute;
+  height: 20px;
+  right: 20px;
+  bottom: 10px;
+  border-radius: 10%;
+}
+
+.footerSer {
+  grid-area: footerS;
+  background-color: #012b65;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footerSer h3 {
+  font-size: 20px;
+  font-family: "Rubik Mono One", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerSer section a img {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+.footerSer section a img:hover {
+  transform: scale(1.5);
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 45% 27.5% 27.5%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "headerC headerC headerC" "fraseC boxesC boxMC" "footerC footerC footerC";
+}
+
+/*
+.titulo {
+font-family: $titulos;
+}
+*/
+.headerCont {
+  grid-area: headerC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: #012b65;
+}
+
+@keyframes logoAnimation {
+  /*
+	0%{ width: 400px;}
+	100% { width: 1300px;}
+	*/
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation-name: logoAnimation;
+  animation-duration: 2s;
+  padding-bottom: 10px;
+  padding-top: 3px;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+nav ul li {
+  display: block;
+  text-align: right;
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: 0px;
+  line-height: 4.5px;
+  font-family: "Work Sans", sans-serif;
+}
+
+nav ul li ul a:hover {
+  color: #ee2537;
+}
+
+.frase {
+  background-color: #a0dde7;
+  grid-template-areas: fraseC;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.frase1 {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 40px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.frase2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 25px;
+  color: #012b65;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.boxes1 {
+  grid-template-areas: boxesC;
+  background-color: #ee2537;
+  padding: 15px;
+}
+
+.boxes1 p {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+}
+
+.boxMensaje {
+  grid-template-areas: boxMC;
+  padding: 50px;
+}
+
+footer {
+  grid-area: footerC;
+  background-color: #f4b3c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-family: "Rubik Mono One", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer section a img {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+footer section a img:hover {
+  transform: scale(1.5);
+}

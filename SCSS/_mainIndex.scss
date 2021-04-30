@@ -1,0 +1,171 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.grid2 {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:
+	"headerI headerI"
+	"fotoLogo fotoLogo"
+	"quienesSomos quienesSomos"
+	"photoLizLeft quoteLizRight"
+	"footer footer" 
+	;
+	height:100vh;
+}
+
+.headerInde {
+	grid-area: headerI;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 100;
+	background-color: $rojo;
+}
+
+@keyframes logoAnimation {
+	/*
+	0%{ width: 400px;}
+	100% { width: 1300px;}
+	*/
+}
+
+.logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	animation-name: logoAnimation;
+	animation-duration: 2s;
+	padding-bottom: 10px;
+	padding-top: 3px;
+
+}
+.logo:hover{
+	transform: scale(1.2);
+}
+
+nav ul li {
+	display: block;
+	text-align: right; 
+	color: $blanco;
+	font-size: 18px;
+	margin-right: 20px;
+	padding-top: 10px;
+	font-weight: $textos-regular;
+	letter-spacing: 3px;
+	font-family: $titulos;
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+
+}
+nav ul li ul a {
+	display: block;
+	color: $blanco;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: $tectos-light;
+	white-space: nowrap;
+	letter-spacing: 0px;
+	line-height: 4.5px;
+	font-family: $textos;
+}
+
+nav ul li ul a:hover {
+	color: $azulOscuro;
+}
+
+.fotoLogo {
+	display: flex;
+	flex-direction: column;
+	grid-area: fotoLogo;
+}
+.quienesSomos{
+	grid-area: quienesSomos;
+	background-color: $azul; 
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+
+}
+.quienesSomos h1{
+	color: $rojo;
+	font-size: 50px;
+	font-family: $titulos;
+}
+.quienesSomos p{
+	color: $azulOscuro;
+	font-size: 25px;
+}
+.lizPhoto {
+	grid-area:photoLizLeft;
+	background-color: $rojo;
+}
+.lizPhoto img{
+
+	padding-left: 60px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.quoteLiz {
+	grid-area: quoteLizRight;
+	background-color: $rosa;
+	display: flex;
+	flex-direction: column;
+	text-align: right; 
+	justify-content: center;
+	padding-right: 30px;
+	padding-left:50px;
+}
+
+.quoteLiz h2 { 
+	font-size: 35px;
+	font-family: $titulos;
+	color: $blanco;
+ }
+
+.quoteLiz p {
+	font-family: $textos;
+	font-size: 25px;
+	color: $azulOscuro;	
+}
+
+.footerIn {
+	grid-area: footer;
+	background-color: $azulOscuro;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.footerIn h3 {
+	font-size: 20px;
+	font-family: $titulos;
+	color: $blanco;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footerIn section a img {
+	display: inline-block;
+	text-align: center;
+	padding:5px;
+}
+.footerIn section a img:hover {  
+transform: scale(1.5);
+}
+.float1 {
+	float: right;
+}

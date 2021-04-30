@@ -1,0 +1,150 @@
+.grid3 {
+	display: grid;
+	grid-template-columns: 45% 27.5% 27.5%;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+	"headerC headerC headerC"
+	"fraseC boxesC boxMC"
+	"footerC footerC footerC"
+	;
+}
+/*
+.titulo {
+font-family: $titulos;
+}
+*/
+
+.headerCont {
+	grid-area: headerC;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 100;
+	background-color: $azulOscuro;
+}
+
+@keyframes logoAnimation {
+	/*
+	0%{ width: 400px;}
+	100% { width: 1300px;}
+	*/
+}
+
+.logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	animation-name: logoAnimation;
+	animation-duration: 2s;
+	padding-bottom: 10px;
+	padding-top: 3px;
+
+}
+.logo:hover{
+	transform: scale(1.2);
+}
+
+nav ul li {
+	display: block;
+	text-align: right; 
+	color: white;
+	font-size: 18px;
+	margin-right: 20px;
+	padding-top: 10px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	font-family: $titulos;
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+
+}
+nav ul li ul a {
+	display: block;
+	color: $blanco;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 400;
+	white-space: nowrap;
+	letter-spacing: 0px;
+	line-height: 4.5px;
+	font-family: $textos;
+}
+
+nav ul li ul a:hover {
+	color: $rojo;
+}
+
+
+.frase {
+	background-color: $azul;
+	grid-template-areas:fraseC;
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+
+}
+.frase1 {
+	font-family: $titulos;
+	font-size: 40px;
+	padding-top: 20px;
+	color: $blanco;
+	}
+
+.frase2 {
+	font-family:$textos;
+	font-size: 25px;
+	color: $azulOscuro;
+	padding-left: 10px;
+	font-weight: $textos-bold
+}
+
+.boxes1 {
+	grid-template-areas: boxesC;
+	background-color: $rojo;
+	padding: 15px;
+}
+
+.boxes1 p{
+	font-family:$textos;
+	color:$blanco;
+
+}
+.boxMensaje{
+	grid-template-areas: boxMC;
+	padding: 50px;
+}
+
+footer{ 
+	grid-area: footerC;
+	background-color: $rosa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+	footer h3 {
+		font-size: 20px;
+		font-family: $titulos;
+		color: $blanco;
+		padding-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	footer section a img {
+		display: inline-block;
+		text-align: center;
+		padding:5px;
+	}
+
+	footer section a img:hover {  
+	transform: scale(1.5);
+}
